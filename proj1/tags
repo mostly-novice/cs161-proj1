@@ -1,0 +1,44 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ARGV	shellcode.S	/^#define ARGV	(STRLEN+1)$/;"	d
+Cookie	app.py	/^import Cookie$/;"	i
+ENVP	shellcode.S	/^#define ENVP	(ARGV+4)$/;"	d
+STRING	shellcode.S	/^#define STRING	"\/bin\/sh"$/;"	d
+STRLEN	shellcode.S	/^#define STRLEN	7$/;"	d
+applogic	app.py	/^import applogic$/;"	i
+body	app.py	/^	   "<\/PRE>\\n";$/;"	v
+body	app.py	/^    body = applogic.run(query, cookie)$/;"	v
+build_exploit	exploit-template.py	/^def build_exploit(shellcode):$/;"	f
+calladdr	shellcode.S	/^ calladdr:$/;"	l
+cgi	app.py	/^import cgi$/;"	i
+cookie	app.py	/^cookie = Cookie.SimpleCookie()$/;"	v
+cookiestr	app.py	/^cookiestr = cookie.output()$/;"	v
+cur_f	httpd.c	/^static FILE *cur_f;	\/* connection being currently handled *\/$/;"	v	file:
+datetime	applogic.py	/^import datetime$/;"	i
+fgets_trim	httpd.c	/^fgets_trim(char *buf, int size, FILE *f)   $/;"	f	file:
+http_err	httpd.c	/^http_err(FILE *f, int code, char *fmt, ...)$/;"	f	file:
+main	httpd.c	/^main(int argc, const char **argv)$/;"	f
+main	shellcode.S	/^ main:$/;"	l
+os	app.py	/^import os$/;"	i
+os	applogic.py	/^import os$/;"	i
+parse_req	httpd.c	/^parse_req(char *reqpath)$/;"	f	file:
+popladdr	shellcode.S	/^ popladdr:$/;"	l
+process_client	httpd.c	/^process_client(const char *dir, int fd)$/;"	f	file:
+query	app.py	/^query = cgi.parse()$/;"	v
+req	exploit-template.py	/^    req = build_exploit(shellcode)$/;"	v
+resp	exploit-template.py	/^    resp = send_req(sys.argv[1], int(sys.argv[2]), req)$/;"	v
+run	applogic.py	/^def run(query, cookie):$/;"	f
+send_req	exploit-template.py	/^def send_req(host, port, req):$/;"	f
+shellcode	exploit-template.py	/^    shellcode = shellfile.read()$/;"	v
+shellfile	exploit-template.py	/^    shellfile = open("shellcode.bin", "r")$/;"	v
+socket	exploit-template.py	/^import socket$/;"	i
+sys	app.py	/^import sys$/;"	i
+sys	applogic.py	/^import sys$/;"	i
+sys	exploit-template.py	/^import sys$/;"	i
+traceback	app.py	/^import traceback$/;"	i
+traceback	exploit-template.py	/^import traceback$/;"	i
+url_decode	httpd.c	/^url_decode(char *src, char *dst)$/;"	f	file:
